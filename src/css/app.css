@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Open+Sans&display=swap");
+
+/*** 
+
+====================================================================
+	Reset
+====================================================================
+
+ ***/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #000000;
+  font-weight: 400;
+  background: #f5f5f5;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+  font-weight: 600;
+  margin: 0px;
+  background: none;
+  line-height: 1.6em;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Typography */
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+textarea {
+  overflow: hidden;
+}
+
+p {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.page-wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 300px;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*===============================*/
+
+#listing {
+  flex: 1;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+#listing .col-md-4 {
+  margin-bottom: 10px;
+}
+
+.row > .col-md-3 {
+  border-radius: 4px;
+  margin-top: 15px;
+  padding-bottom: 15px;
+}
+.filters,
+.launch-success,
+.landing-success {
+  padding: 20px 20px 0px 20px;
+  background-color: #ffffff;
+}
+.filters h6,
+.launch-success h6,
+.landing-success h6 {
+  text-align: center;
+  width: 100%;
+}
+.filters h6:after,
+.launch-success h6:after,
+.landing-success h6:after {
+  position: absolute;
+  content: "";
+  right: 0px;
+  left: 0;
+  bottom: 0px;
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1.5px solid #aba8a8;
+}
+
+.launch-year,
+.launch-success,
+.landing-success {
+  padding: 20px 10px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.launch-success,
+.landing-success {
+  padding: 20px 30px 0px 30px;
+}
+
+.launch-success button,
+.landing-success button {
+  margin-top: 20px;
+}
+
+.launch-year button,
+.launch-success button,
+.landing-success button {
+  color: #ffffff;
+  background-color: #378237;
+  padding: 5px 15px;
+  border-radius: 4px;
+  width: 70px;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 7px;
+}
+
+.col-md-9 {
+  padding: 15px 25px;
+}
+
+#listing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.mission-grid {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 0 8px 10px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  max-width: 23%;
+  flex: 0 0 23%;
+}
+
+.product-card {
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 16%;
+}
+
+.product-image img {
+  max-width: 100%;
+}
+
+.mission-content h5 {
+  font-size: 16px;
+  padding: 10px 0 15px;
+  color: #3241ff;
+  text-align: left;
+}
+
+.mission-content ul li {
+  font-size: 16px;
+  color: #3241ff;
+  text-align: left;
+}
+
+.mission-content h6,
+.mission-content h4 {
+  padding-bottom: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.mission-content h4 {
+  padding-bottom: 0px;
+}
+
+.mission-content h6 p {
+  font-size: 13px;
+  font-weight: bold;
+  width: 50%;
+  display: inline-block;
+}
+
+.mission-content h6 p + span {
+  vertical-align: top;
+}
+
+.mission-content h6 span {
+  font-size: 12px;
+  font-weight: normal;
+  color: #3241ff;
+  font-family: "Open Sans", sans-serif;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .col-md-3,
+  .col-md-9,
+  .mission-grid {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .mission-grid {
+    margin: 0 auto 10px auto;
+  }
+
+  .launch-year button,
+  .launch-success button,
+  .landing-success button {
+    width: 40%;
+  }
+
+}
